@@ -143,6 +143,49 @@ button.primary:disabled,button.light:disabled{opacity:.62;cursor:not-allowed;tra
 .account-balance-label{font-size:14px;font-weight:800;opacity:.9}.account-balance-value{font-size:34px;font-weight:800;margin-top:7px}.account-balance-note{font-size:11px;line-height:1.4;margin-top:8px;opacity:.88}
 .account-table{width:100%;border-collapse:separate;border-spacing:0 8px}.account-table td{background:#fff;padding:14px 12px;font-size:14px}.account-table td:first-child{border-radius:13px 0 0 13px;color:#66736d}.account-table td:last-child{border-radius:0 13px 13px 0;text-align:right;font-weight:800;color:#087443}
 
+
+/* Retrait premium v2 */
+.withdraw-page{background:linear-gradient(180deg,#f4faf7 0,#f7faf9 48%,#f1f6f4 100%)}
+.withdraw-head{padding:18px 16px 22px;box-shadow:0 8px 22px #08744318}
+.withdraw-title{font-size:23px;letter-spacing:-.3px}
+.withdraw-subtitle{font-size:12px;margin-top:5px}
+.withdraw-balance-card{position:relative;overflow:hidden;margin:14px 16px 12px;padding:20px;border-radius:24px}
+.withdraw-balance-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-38px;top:-44px;background:#ffffff12}
+.withdraw-balance-label{display:flex;align-items:center;gap:7px}
+.withdraw-balance-label:before{content:"\f53a";font-family:"Font Awesome 6 Free";font-weight:900;font-size:12px}
+.withdraw-balance-value{font-size:32px;letter-spacing:-.7px}
+.withdraw-balance-note{max-width:300px}
+.withdraw-box{padding:17px;margin:12px 16px;border-radius:23px}
+.withdraw-section-title{display:flex;align-items:center;gap:9px;font-size:18px;margin-bottom:15px}
+.withdraw-section-title:before{content:"\f53a";font-family:"Font Awesome 6 Free";font-weight:900;color:#087443;background:#eaf7f0;width:31px;height:31px;border-radius:10px;display:grid;place-items:center;font-size:13px}
+.withdraw-label-row{display:flex;justify-content:space-between;align-items:center;margin:15px 0 7px}
+.withdraw-label-row label{margin:0}
+.withdraw-helper{font-size:10px;color:#7a8781}.withdraw-min-note{margin:8px 0 0;color:#087443;background:#eaf7f0;border:1px solid #d7e9df;border-radius:10px;padding:8px 10px;font-size:10.5px;font-weight:700}.withdraw-min-note i{margin-right:5px}
+.withdraw-field-wrap{position:relative}
+.withdraw-field-wrap input{padding-right:64px!important}
+.withdraw-field-suffix{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-weight:900;color:#087443;font-size:13px}
+.amount-input-wrap{border:1.5px solid #d9e7df;border-radius:15px;box-shadow:inset 0 1px 2px #00000004}
+.amount-input-wrap:focus-within{border-color:#087443;box-shadow:0 0 0 4px #08744312}
+.amount-input-wrap input{font-size:21px;font-weight:800;padding:15px}
+.amount-input-wrap span{font-size:14px}
+.quick-amounts{gap:8px;margin-top:9px}
+.quick-amounts button{border:1px solid #d9ebe1;border-radius:12px;padding:10px 5px;font-weight:800;background:#f1faf5}
+.withdraw-methods{grid-template-columns:repeat(3,1fr);gap:8px}
+.withdraw-method{min-height:72px;padding:10px 8px!important;border-radius:15px!important;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;font-weight:800!important}
+.withdraw-method i{font-size:16px}
+.withdraw-method.active{box-shadow:0 5px 14px #08744318}
+.withdraw-method small{font-size:9px;font-weight:600;opacity:.72}
+.withdraw-form-note{display:flex;gap:9px;align-items:flex-start;background:#f0f8f4;border:1px solid #dceee4;color:#52645b;border-radius:15px;padding:12px;font-size:10.5px;line-height:1.45;margin-top:14px}
+.withdraw-form-note i{color:#087443;font-size:14px;margin-top:1px}
+.withdraw-submit{height:54px;border-radius:16px!important;font-size:15px!important;font-weight:900!important;box-shadow:0 9px 20px #08744324}
+.withdraw-submit:disabled{opacity:.7;box-shadow:none}
+.withdraw-security{font-size:10px;padding:0 5px}
+.withdraw-recent-title{display:flex;align-items:center;justify-content:space-between}
+.withdraw-recent-title .count{background:#eaf7f0;color:#087443;border-radius:20px;padding:4px 8px;font-size:10px;font-weight:900}
+.request-item{background:#fbfdfc;border-radius:16px;border-color:#e1ebe5;padding:13px}
+.request-status{font-size:10px;padding:5px 8px}
+@media(max-width:390px){.withdraw-methods{grid-template-columns:1fr}.withdraw-method{min-height:54px;flex-direction:row;justify-content:flex-start}.withdraw-method small{margin-left:auto}}
+
 /* Retrait & Support v1 */
 .account-menu-item{cursor:pointer;transition:.18s transform,.18s box-shadow}.account-menu-item:active{transform:scale(.99)}
 .withdraw-page,.support-page{background:#f5f8f7;min-height:100vh;padding-bottom:28px}.withdraw-head,.support-head{background:linear-gradient(135deg,#087443,#0ca66b);color:#fff;padding:20px 16px 24px;display:flex;align-items:center;gap:12px;border-radius:0 0 26px 26px}.page-back{width:44px;height:44px;padding:0;margin:0;background:#ffffff20;color:#fff;border-radius:14px;font-size:31px;line-height:1}.withdraw-title,.support-title{font-size:24px;font-weight:800}.withdraw-subtitle,.support-subtitle{font-size:12px;opacity:.88;margin-top:4px}.withdraw-balance-card{margin:16px;background:linear-gradient(135deg,#087443,#0ca66b);color:#fff;border-radius:23px;padding:20px;box-shadow:0 8px 24px #0874432b}.withdraw-balance-label{font-size:11px;font-weight:800;letter-spacing:.5px;opacity:.86}.withdraw-balance-value{font-size:34px;font-weight:900;margin:7px 0}.withdraw-balance-note{font-size:11px;line-height:1.45;opacity:.9}.withdraw-box,.support-box{margin:12px 16px;background:#fff;border:1px solid #e1e9e5;border-radius:21px;padding:16px;box-shadow:0 4px 15px #00000008}.withdraw-section-title,.support-section-title{font-size:17px;font-weight:800;margin-bottom:12px;color:#17221d}.amount-input-wrap{display:flex;align-items:center;border:1px solid #dce6e1;border-radius:11px;background:#fff;overflow:hidden}.amount-input-wrap input{border:0;border-radius:0;flex:1}.amount-input-wrap span{padding:0 13px;color:#6b7872;font-weight:800}.quick-amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:8px}.quick-amounts button{margin:0;padding:9px 4px;background:#eaf6f0;color:#087443;font-size:11px}.withdraw-methods{display:grid;gap:8px}.withdraw-method{margin:0;text-align:left;background:#f6f9f7;color:#52625a;border:1px solid #dfe8e3;padding:12px;font-size:12px}.withdraw-method.active{background:#e8f7ee;color:#087443;border-color:#087443}.withdraw-submit{margin-top:18px}.withdraw-security{margin-top:11px;text-align:center;color:#75817b;font-size:10.5px;line-height:1.45}.withdraw-message,.support-message{display:none;border-radius:11px;padding:10px 12px;font-size:12px;line-height:1.4;margin-bottom:10px}.withdraw-message.show,.support-message.show{display:block}.notice-ok{background:#e8f7ee;color:#087443}.notice-error{background:#fdeaea;color:#a52b2b}.request-item,.ticket-item{border:1px solid #e2e9e5;border-radius:15px;padding:12px;margin-top:9px}.request-top,.ticket-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.request-item strong,.ticket-item strong{font-size:13px}.request-meta,.ticket-meta{font-size:10.5px;color:#738078;line-height:1.5;margin-top:6px}.request-status,.ticket-status{display:inline-block;padding:4px 7px;border-radius:20px;font-size:9px;font-weight:800;white-space:nowrap}.status-waiting{background:#fff4d7;color:#8a6500}.status-done{background:#e8f7ee;color:#087443}.status-denied{background:#fdeaea;color:#a52b2b}.support-body{padding:15px 0}.support-welcome{margin:0 16px 12px;background:#eaf6f0;border:1px solid #d7e9df;border-radius:20px;padding:15px;display:flex;gap:12px;align-items:center}.support-icon{width:46px;height:46px;border-radius:15px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:23px;flex:none}.support-welcome b{font-size:15px;color:#087443}.support-welcome p{margin:4px 0 0;color:#65736b;font-size:11px;line-height:1.45}.faq-item{border:1px solid #e2e9e5;border-radius:14px;margin-top:8px;overflow:hidden;cursor:pointer}.faq-item>div{padding:12px;display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px}.faq-item>div span{font-size:18px;color:#087443}.faq-item p{display:none;padding:0 12px 12px;margin:0;color:#6b7872;font-size:11px;line-height:1.5}.faq-item.open p{display:block}.faq-item.open>div span{transform:rotate(45deg)}.support-select{width:100%;padding:13px;border:1px solid #dce6e1;border-radius:11px;background:#fff;font-size:14px}.support-textarea{width:100%;min-height:125px;resize:vertical;padding:13px;border:1px solid #dce6e1;border-radius:11px;font:14px Arial,sans-serif;outline:none}.support-file{padding:10px 0;border:0;font-size:12px}.support-attachment-preview{font-size:10px;color:#087443;margin-top:2px}.support-empty{border:1px dashed #d6e1dc;background:#f9fbfa;border-radius:15px;padding:24px 12px;text-align:center;color:#7c8992;font-size:12px;font-weight:700}.ticket-response{margin-top:8px;padding:9px;background:#f5f8f7;border-radius:10px;font-size:11px;color:#52625a;line-height:1.45}.back{margin:8px 16px 20px;width:calc(100% - 32px)}
@@ -299,8 +342,126 @@ i.fa-solid,i.fa-regular,i.fa-brands{line-height:1;vertical-align:-.06em}
 @media(min-width:700px){.wrap{max-width:560px}.content{padding-left:20px;padding-right:20px}}
 @media(max-width:380px){.card{margin-left:12px;margin-right:12px;padding:17px}.content,.account-body{padding-left:12px;padding-right:12px}.history-actions{gap:7px;padding-left:12px;padding-right:12px}.balance-value{font-size:30px}}
 
+
+/* === iKeePay paiement automatique intégré === */
+/* Fenêtre de paiement */
+#paymentOverlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  background:var(--bg);
+}
+.paybar{
+  height:68px;
+  background:linear-gradient(135deg,var(--blue2),var(--blue));
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 16px;
+  font-size:20px;
+  font-weight:700;
+}
+.close{
+  width:44px;
+  height:44px;
+  margin:0;
+  padding:0;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.4);
+  background:rgba(255,255,255,.13);
+  font-size:28px;
+}
+.loading{
+  min-height:calc(100vh - 68px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:13px;
+  color:#475467;
+}
+.spinner{
+  width:46px;
+  height:46px;
+  border:4px solid #dbeafe;
+  border-top-color:var(--blue);
+  border-radius:50%;
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+#ikeepay-iframe{
+  display:none;
+  width:100%;
+  height:calc(100vh - 68px);
+  border:0;
+  background:#fff;
+}
+.success{
+  display:none;
+  min-height:calc(100vh - 68px);
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:12px;
+  text-align:center;
+  padding:30px;
+}
+.successIcon{font-size:58px}
+.success h2{margin:0;color:var(--blue2)}
+
+
+/* Refonte visuelle de la page de dépôt */
+#depositPage .content{padding:18px 14px 30px;background:linear-gradient(180deg,#eef8f3 0%,#f7faf8 46%,#f3f6f5 100%)}
+#depositPage .content>.plan{max-width:620px;margin:8px auto;padding:24px 20px 22px;border:1px solid #e4eee8;border-radius:26px;background:rgba(255,255,255,.97);box-shadow:0 16px 42px rgba(13,77,51,.09)}
+#depositPage h2{font-size:27px;letter-spacing:-.7px;color:#163d2e;margin:3px 0 10px}
+#depositPage .plan-info{font-size:15px;line-height:1.65;color:#66756d;margin-bottom:20px}
+#depositPage .deposit-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:20px 0 15px}
+#depositPage .pay-method{min-width:0;min-height:84px;border:1px solid #dfe9e3;border-radius:18px;background:#fff;color:#22382e;transition:all .18s ease;padding:12px 6px}
+#depositPage .pay-method strong{display:block;font-size:15px;margin-bottom:6px}
+#depositPage .pay-method small{display:block;font-size:11px;line-height:1.3;color:#78877f}
+#depositPage .pay-method.active{border:2px solid #11784f;background:#eef9f3;box-shadow:0 5px 14px rgba(17,120,79,.09)}
+#depositPage .deposit-number{border-radius:17px;padding:15px 16px;margin:13px 0 20px;background:#eaf7f0;color:#24523e;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+#depositPage .deposit-number b{color:#08764b;font-size:20px;letter-spacing:.3px}
+#depositPage label{display:block;font-size:14px;font-weight:750;color:#263b31;margin:17px 0 8px}
+#depositPage input{width:100%;min-height:56px;border:1px solid #dce7e0;border-radius:16px;background:#fbfdfb;padding:14px 16px;font-size:16px;color:#21372c;box-sizing:border-box;outline:none;transition:border-color .15s,box-shadow .15s}
+#depositPage input:focus{border-color:#168357;box-shadow:0 0 0 4px rgba(22,131,87,.10)}
+#depositPage .ref-note{font-size:12px;line-height:1.5;color:#718078;margin-top:8px}
+#depositPage #depositSubmitBtn{width:100%;min-height:58px;margin-top:20px;border:0;border-radius:17px;background:linear-gradient(135deg,#13784f,#20956a);box-shadow:0 9px 20px rgba(19,120,79,.22);font-size:16px;font-weight:750;letter-spacing:.1px}
+#depositPage #depositSubmitBtn:active{transform:scale(.99)}
+#depositPage .back{width:100%;border-radius:15px;min-height:48px;margin-top:12px;background:#f3f7f4;color:#345342;border:1px solid #e2ebe5}
+#depositPage .timer-card{border-radius:17px;margin-top:18px}
+@media(max-width:390px){#depositPage .content>.plan{padding:20px 15px;border-radius:22px}#depositPage .pay-method{min-height:78px}#depositPage .pay-method strong{font-size:14px}#depositPage .pay-method small{font-size:10px}}
+
 </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+
+/* Amélioration professionnelle de la page dépôt */
+.deposit-intro{font-size:14px;line-height:1.65;margin:10px 0 22px;color:#687770}
+.deposit-methods{gap:9px!important;margin:18px 0 20px!important}
+.pay-method{min-height:112px!important;border:1px solid #e1e9e4!important;border-radius:18px!important;background:#fbfdfb!important;padding:14px 7px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:7px!important;color:#263b32!important;box-shadow:0 3px 10px #103b2410!important}
+.pay-method.active{border:2px solid #08794e!important;background:linear-gradient(180deg,#f0fbf5,#e7f7ee)!important;box-shadow:0 5px 16px #08794e18!important}
+.pay-method strong{font-size:13px!important;line-height:1.2;text-align:center}
+.pay-method small{font-size:10px!important;line-height:1.3;text-align:center;color:#77847d!important}
+.method-icon{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:11px;background:#e2f4e9;color:#08794e;font-size:16px}
+.deposit-number{border:1px solid #dcefe4!important;border-radius:16px!important;background:#eff9f3!important;color:#176844!important;padding:15px!important;font-size:14px!important;line-height:1.5;margin:14px 0 18px!important}
+.deposit-summary{display:flex;align-items:center;gap:12px;border:1px solid #e3ebe6;border-radius:17px;padding:14px;margin:14px 0 18px;background:#fff}
+.summary-icon{width:43px;height:43px;flex:0 0 43px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#eaf7ef;color:#08794e;font-size:18px}
+.summary-copy{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}.summary-copy span{font-size:12px;color:#7b8780}.summary-copy strong{font-size:16px;color:#20382d}.summary-lock{color:#08794e}
+.visually-hidden-input{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;padding:0!important;margin:0!important}
+#depositPage label{display:block;font-size:14px;font-weight:750;color:#263a31;margin:16px 0 8px}
+.amount-field{display:flex;align-items:center;gap:10px;border:1px solid #dce6df;border-radius:16px;background:#f9fcfa;padding:0 15px;color:#08794e}
+.amount-field input{border:0!important;background:transparent!important;box-shadow:none!important;padding:17px 0!important;margin:0!important;min-width:0;flex:1;font-size:22px!important;font-weight:750;color:#183b2a!important}
+.amount-field span{font-size:13px;font-weight:800;color:#748078}
+.secure-note{display:flex;align-items:flex-start;gap:11px;padding:14px;border-radius:16px;background:#f2f8f4;margin:20px 0;color:#08794e}
+.secure-note>i{font-size:19px;margin-top:2px}.secure-note div{display:flex;flex-direction:column;gap:5px}.secure-note b{font-size:13px;color:#214d36}.secure-note span{font-size:12px;line-height:1.55;color:#64766b}
+.deposit-pay-button{width:100%;min-height:56px;border-radius:16px!important;display:flex;align-items:center;justify-content:center;gap:10px;font-size:15px!important;font-weight:750!important;box-shadow:0 8px 18px #08794e26!important}
+.payment-footnote{display:flex;justify-content:center;align-items:center;gap:7px;text-align:center;font-size:11px;color:#77847c;line-height:1.5;margin-top:13px}
+@media(max-width:380px){.pay-method{min-height:105px!important}.pay-method strong{font-size:11px!important}.pay-method small{font-size:9px!important}.deposit-summary{padding:12px}}
+
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -480,41 +641,27 @@ i.fa-solid,i.fa-regular,i.fa-brands{line-height:1;vertical-align:-.06em}
     </div>
     <div class="content">
       <div class="plan">
-        <h2>Faire un dépôt</h2>
-        <div class="plan-info">Choisissez un moyen de paiement. Le dépôt reste en attente jusqu'à sa validation par l'administrateur.</div>
-
-        <div class="deposit-methods">
-          <button type="button" class="pay-method active" id="airtelMethod" onclick="selectPayment('Airtel')">
-            <strong>Airtel</strong><small>Disponible</small>
-          </button>
-          <button type="button" class="pay-method" id="orangeMethod" onclick="selectPayment('Orange')">
-            <strong>Orange</strong><small>Bientôt disponible</small>
-          </button>
-          <button type="button" class="pay-method" id="vodacomMethod" onclick="selectPayment('Vodacom')">
-            <strong>Vodacom</strong><small>Bientôt disponible</small>
-          </button>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <div style="width:48px;height:48px;flex:0 0 48px;border-radius:16px;background:#e9f7ef;color:#13784f;display:grid;place-items:center;font-size:21px"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+          <div><h2 style="margin:0">Faire un dépôt</h2><div style="font-size:12px;color:#168357;font-weight:700;margin-top:4px"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Paiement sécurisé</div></div>
         </div>
+        <div class="plan-info">Choisissez votre réseau et vérifiez le montant du VIP. Vous serez ensuite redirigé vers l’interface de paiement sécurisée.</div>
 
-        <div class="deposit-number" id="airtelNumber">
-          Numéro de dépôt Airtel : <b>0980072270</b>
+        <div class="deposit-summary">
+          <div class="summary-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+          <div class="summary-copy"><span>Votre formule</span><strong id="depositProductLabel">Sélectionnez un VIP</strong></div>
+          <span class="summary-lock"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
         </div>
+        <input id="depositProduct" type="hidden" value="">
+        <div class="ref-note">Le montant correspondant au VIP choisi est rempli automatiquement.</div>
 
-        <label>Produit sélectionné</label>
-        <input id="depositProduct" type="text" value="" readonly>
-        <div class="ref-note">Le montant du VIP sélectionné est rempli automatiquement.</div>
+        <label for="depositAmount">Montant à payer (FC)</label>
+        <div class="amount-field"><i class="fa-solid fa-coins" aria-hidden="true"></i><input id="depositAmount" type="number" min="1" placeholder="Ex. 10000" readonly><span>FC</span></div>
 
-        <label>Montant (FC)</label>
-        <input id="depositAmount" type="number" min="1" placeholder="Ex. 10000">
+        <div class="secure-note"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><div><b>Un paiement plus simple et sécurisé</b><span>Continuez vers la fenêtre de paiement du prestataire. Ne partagez jamais votre code PIN Mobile Money dans le chat ou avec un tiers.</span></div></div>
 
-        <label>Numéro ayant effectué le dépôt</label>
-        <input id="depositSenderPhone" type="tel" inputmode="tel" placeholder="Ex. 0980000000">
-
-        <label>Référence de paiement</label>
-        <input id="depositReference" type="text" placeholder="Référence de transaction">
-
-        <div class="deposit-number" style="background:#fff8e6;color:#765800">⚠️ Vérifiez que le numéro de paiement indiqué correspond bien au numéro utilisé pour effectuer le dépôt.</div>
-
-        <button id="depositSubmitBtn" class="primary" onclick="submitDeposit()">Envoyer le dépôt</button>
+        <button id="depositSubmitBtn" class="primary deposit-pay-button" onclick="submitDeposit()"><i class="fa-solid fa-lock" aria-hidden="true"></i> Continuer vers le paiement <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        <div class="payment-footnote"><i class="fa-solid fa-clock" aria-hidden="true"></i> Le dépôt sera confirmé après vérification du paiement.</div>
 
         <div id="depositTimer" class="timer-card">
           <div class="timer-title">⏱ Produit activé</div>
@@ -767,37 +914,75 @@ i.fa-solid,i.fa-regular,i.fa-brands{line-height:1;vertical-align:-.06em}
       <div class="withdraw-balance-note">Les demandes en attente sont réservées et ne peuvent pas être demandées une deuxième fois.</div>
     </div>
 
-    <div class="withdraw-box">
+    <div class="withdraw-box withdraw-form-card">
       <div class="withdraw-section-title">Nouvelle demande</div>
       <div id="withdrawMessage" class="withdraw-message"></div>
-      <label>Montant à retirer</label>
-      <div class="amount-input-wrap"><input id="withdrawAmount" type="number" min="1" step="1" placeholder="Ex. 10000"><span>FC</span></div>
-      <div class="quick-amounts">
+
+      <div class="withdraw-label-row">
+        <label for="withdrawAmount">Montant à retirer</label>
+        <span class="withdraw-helper">Solde disponible ci-dessus</span>
+      </div>
+      <div class="amount-input-wrap">
+        <input id="withdrawAmount" type="number" min="1" step="1" inputmode="numeric" placeholder="Ex. 30 000" aria-label="Montant à retirer">
+        <span>FC</span>
+      </div>
+      <div class="withdraw-min-note"><i class="fa-solid fa-circle-info"></i> Retrait minimum : <b>3 000 FC</b></div><div class="quick-amounts">
         <button type="button" onclick="setWithdrawAmount(10000)">10 000</button>
         <button type="button" onclick="setWithdrawAmount(25000)">25 000</button>
         <button type="button" onclick="setWithdrawAmount(50000)">50 000</button>
       </div>
 
-      <label>Mode de paiement</label>
+      <div class="withdraw-label-row">
+        <label>Mode de paiement</label>
+        <span class="withdraw-helper">Choisissez la destination</span>
+      </div>
       <div class="withdraw-methods">
-        <button type="button" id="withdrawAirtel" class="withdraw-method active" onclick="selectWithdrawMethod('Airtel')"><i class="fa-solid fa-wallet" aria-hidden="true"></i> Airtel Money</button>
-        <button type="button" id="withdrawOrange" class="withdraw-method" onclick="selectWithdrawMethod('Orange')"><i class="fa-solid fa-wallet" aria-hidden="true"></i> Orange Money</button>
-        <button type="button" id="withdrawVodacom" class="withdraw-method" onclick="selectWithdrawMethod('Vodacom')"><i class="fa-solid fa-wallet" aria-hidden="true"></i> Vodacom M-Pesa</button>
+        <button type="button" id="withdrawAirtel" class="withdraw-method active" onclick="selectWithdrawMethod('Airtel')" aria-label="Airtel Money">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <span>Airtel Money</span><small>Mobile Money</small>
+        </button>
+        <button type="button" id="withdrawOrange" class="withdraw-method" onclick="selectWithdrawMethod('Orange')" aria-label="Orange Money">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <span>Orange Money</span><small>Mobile Money</small>
+        </button>
+        <button type="button" id="withdrawVodacom" class="withdraw-method" onclick="selectWithdrawMethod('Vodacom')" aria-label="Vodacom M-Pesa">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <span>Vodacom M-Pesa</span><small>Mobile Money</small>
+        </button>
       </div>
 
-      <label>Numéro de réception</label>
-      <input id="withdrawPhone" type="tel" inputmode="tel" placeholder="Ex. 09XXXXXXXX">
-      <label>Nom du bénéficiaire</label>
-      <input id="withdrawName" type="text" placeholder="Nom complet du titulaire">
-      <label>Note (facultatif)</label>
-      <input id="withdrawNote" type="text" maxlength="120" placeholder="Information complémentaire">
+      <div class="withdraw-label-row">
+        <label for="withdrawPhone">Numéro de réception</label>
+        <span class="withdraw-helper">Vérifiez-le avant l'envoi</span>
+      </div>
+      <div class="withdraw-field-wrap">
+        <input id="withdrawPhone" type="tel" inputmode="tel" placeholder="Ex. 0980000000" autocomplete="tel" aria-label="Numéro de réception">
+      </div>
 
-      <button class="primary withdraw-submit" id="withdrawSubmitBtn" onclick="submitWithdrawal()">Demander le retrait</button>
-      <div class="withdraw-security"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Vérifiez bien le numéro avant l'envoi. La demande sera contrôlée par l'administration.</div>
+      <div class="withdraw-label-row">
+        <label for="withdrawName">Nom du bénéficiaire</label>
+        <span class="withdraw-helper">Nom du titulaire</span>
+      </div>
+      <input id="withdrawName" type="text" placeholder="Nom complet du titulaire" autocomplete="name" aria-label="Nom du bénéficiaire">
+
+      <div class="withdraw-label-row">
+        <label for="withdrawNote">Note <span class="withdraw-helper">(facultatif)</span></label>
+      </div>
+      <input id="withdrawNote" type="text" maxlength="120" placeholder="Information complémentaire" aria-label="Note facultative">
+
+      <div class="withdraw-form-note">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <span>Après votre demande, elle sera enregistrée immédiatement dans <b>Historique → Retraits</b> avec le statut <b>En attente</b>. L'administration effectuera ensuite le contrôle.</span>
+      </div>
+
+      <button class="primary withdraw-submit" id="withdrawSubmitBtn" onclick="submitWithdrawal()">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Demander le retrait
+      </button>
+      <div class="withdraw-security"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Vos informations sont utilisées uniquement pour traiter la demande de retrait.</div>
     </div>
 
     <div class="withdraw-box">
-      <div class="withdraw-section-title">Mes demandes récentes</div>
+      <div class="withdraw-section-title withdraw-recent-title">Mes demandes récentes <span class="count" id="withdrawRecentCount">0</span></div>
       <div id="withdrawRequestList"></div>
     </div>
     <button class="light back" onclick="openAccount()">Retour à mon compte</button>
@@ -1053,20 +1238,19 @@ function goDeposit(product){
  document.getElementById('depositPage').classList.add('active');
  document.getElementById('selectedProduct').textContent=product+' — Dépôt';
  document.getElementById('depositProduct').value=product;
+  const productLabel=document.getElementById('depositProductLabel'); if(productLabel) productLabel.textContent=product || 'Sélectionnez un VIP';
  const planAmounts={
   'VIP 1':10000,'VIP 2':25000,'VIP 3':50000,'VIP 4':100000,'VIP 5':250000,
   'VIP 6':500000,'VIP 7':1000000,'VIP 8':2500000,'VIP 9':5000000
  };
  document.getElementById('depositAmount').value=planAmounts[product]||'';
- document.getElementById('depositSenderPhone').value='';
- document.getElementById('depositReference').value='';
  document.getElementById('depositTimer').classList.remove('show');
  selectPayment('Airtel');
  refreshApprovedProducts();
  depositSubmitting=false;
  const btn=document.getElementById('depositSubmitBtn');
  btn.disabled=false;
- btn.textContent='Envoyer le dépôt';
+ btn.innerHTML='<i class="fa-solid fa-lock" aria-hidden="true"></i> Continuer vers le paiement <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
  window.scrollTo(0,0);
 }
 
@@ -1109,7 +1293,7 @@ function selectPayment(method){
  document.getElementById(map[method]).classList.add('active');
  const number=document.getElementById('airtelNumber');
  if(method==='Airtel'){
-   number.innerHTML='Numéro de dépôt Airtel : <b>0980072270</b>';
+   number.innerHTML='<i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Numéro Airtel Money <b>0980072270</b>';
    number.style.display='block';
  }else{
    number.innerHTML='<b>'+method+' : bientôt disponible</b>';
@@ -1166,7 +1350,7 @@ function selectPayment(method){
  setTimeout(()=>{
    depositSubmitting=false;
    btn.disabled=false;
-   btn.textContent='Envoyer le dépôt';
+   btn.textContent='Payer maintenant';
    toast('Votre dépôt a bien été enregistré et reste en attente de validation par l’administrateur. Le produit sera activé automatiquement après approbation.','success','Dépôt enregistré');
    openHistory();
  },500);
@@ -1562,13 +1746,27 @@ function submitWithdrawal(){
     date:new Date().toLocaleString('fr-FR'),createdAt:Date.now(),status:'En attente',adminNote:''
   });
   localStorage.setItem('investWithdrawals',JSON.stringify(withdrawals));
+  // Enregistrer immédiatement la demande puis afficher son statut dans l'historique.
+  // Le statut initial est volontairement "En attente" tant que l'administration
+  // n'a pas approuvé ou refusé le retrait.
+  updateWithdrawalPage();
+  updateAccountSummary();
+  updateHistory();
+
+  setWithdrawNotice('Demande envoyée. Redirection vers l’historique…',true);
+  btn.textContent='Traitement en cours…';
+
   setTimeout(()=>{
-    withdrawSubmitting=false;btn.disabled=false;btn.textContent='Demander le retrait';
+    withdrawSubmitting=false;
+    btn.disabled=false;
+    btn.textContent='Demander le retrait';
     document.getElementById('withdrawAmount').value='';
-    setWithdrawNotice('Votre demande a été envoyée. Elle sera vérifiée par l’administration.',true);
-    updateWithdrawalPage();
-    updateAccountSummary();
-  },350);
+
+    // Ouvrir directement l'historique et afficher l'onglet Retraits.
+    openHistory();
+    const withdrawalTab=document.querySelectorAll('#historyPage .tab')[1];
+    historyTab('withdrawals',withdrawalTab);
+  },700);
 }
 
 /* ================= SUPPORT ================= */
@@ -1886,28 +2084,161 @@ function submitSupportTicket(){
     if(window.depositSubmitting)return;
     const user=getCurrentUser();
     if(!user){toast('Veuillez vous connecter.');return;}
+
     const amount=Number(document.getElementById('depositAmount').value);
-    const senderPhone=document.getElementById('depositSenderPhone').value.trim();
-    const ref=document.getElementById('depositReference').value.trim();
     const product=document.getElementById('depositProduct').value.trim();
-    if(selectedPayment!=='Airtel'){toast(selectedPayment+' sera bientôt disponible.');return;}
-    if(!amount||amount<=0||!senderPhone||!ref||!product){toast('Veuillez renseigner le produit, le montant, le numéro ayant effectué le dépôt et la référence.');return;}
-    const planAmounts={'VIP 1':10000,'VIP 2':25000,'VIP 3':50000,'VIP 4':100000,'VIP 5':250000,'VIP 6':500000,'VIP 7':1000000,'VIP 8':2500000,'VIP 9':5000000};
-    if(planAmounts[product]&&amount!==planAmounts[product]){toast('Le montant de '+product+' doit être de '+planAmounts[product].toLocaleString('fr-FR')+' FC.');return;}
-    const duplicate=state.deposits.some(d=>String(d.ref||'').toLowerCase()===ref.toLowerCase()&&!rejected(d.status));
-    if(duplicate){toast('Cette référence de paiement a déjà été envoyée.');return;}
+    if(!amount || amount<=0 || !product){
+      toast('Veuillez sélectionner un produit et un montant valide.');
+      return;
+    }
+
+    const planAmounts={
+      'VIP 1':10000,'VIP 2':25000,'VIP 3':50000,'VIP 4':100000,
+      'VIP 5':250000,'VIP 6':500000,'VIP 7':1000000,
+      'VIP 8':2500000,'VIP 9':5000000
+    };
+    if(planAmounts[product] && amount!==planAmounts[product]){
+      toast('Le montant de '+product+' doit être de '+planAmounts[product].toLocaleString('fr-FR')+' FC.');
+      document.getElementById('depositAmount').value=planAmounts[product];
+      return;
+    }
+
     window.depositSubmitting=true;
-    const btn=document.getElementById('depositSubmitBtn');btn.disabled=true;btn.textContent='Envoi en cours…';
-    try{
-      await setDoc(doc(db,'deposits',idFor('d')),{userId:user.id,product,amount,paymentMethod:selectedPayment,paymentNumber:'0980072270',senderPhone,ref,date:new Date().toLocaleString('fr-FR'),createdAt:now(),status:'En attente',activatedAt:null,firstDueAt:null});
-      await addUserNotification('Dépôt reçu','Votre dépôt de '+amount.toLocaleString('fr-FR')+' FC est en attente de validation.','deposit');
-      showTfToast('Votre dépôt a bien été envoyé.','success','Dépôt enregistré');
-      toast('Dépôt envoyé. Il doit être approuvé par l’administrateur avant l’activation du produit.');
-      openHistory();
-    }catch(e){console.error(e);toast('Erreur lors de l’envoi du dépôt.');}
-    finally{window.depositSubmitting=false;btn.disabled=false;btn.textContent='Envoyer le dépôt';}
+    const btn=document.getElementById('depositSubmitBtn');
+    if(btn){btn.disabled=true;btn.textContent='Préparation du paiement…';}
+
+    const orderId='DEP_'+Date.now();
+    window.__pendingAutomaticDeposit={
+      orderId,userId:user.id,product,amount,
+      paymentMethod:selectedPayment || 'Airtel',
+      currency:'CDF'
+    };
+
+    openAutomaticDepositPayment(window.__pendingAutomaticDeposit);
   }
   window.submitDeposit=submitDeposit;
+
+  /* ===== iKeePay — paiement automatique ===== */
+  const IKEEPAY_PUBLIC_KEY="pk_live_b9df4d28452147efb40ccf9371087953";
+
+  function openAutomaticDepositPayment(cfg){
+    const overlay=document.getElementById('paymentOverlay');
+    const iframe=document.getElementById('ikeepay-iframe');
+    const loading=document.getElementById('loading');
+    const success=document.getElementById('success');
+    if(!overlay||!iframe||!loading||!success){
+      window.depositSubmitting=false;
+      const btn=document.getElementById('depositSubmitBtn');
+      if(btn){btn.disabled=false;btn.textContent='Payer maintenant';}
+      toast('Interface de paiement introuvable.');
+      return;
+    }
+
+    loading.style.display='flex';
+    success.style.display='none';
+    iframe.style.display='none';
+    overlay.style.display='block';
+
+    const params=new URLSearchParams({
+      pk:IKEEPAY_PUBLIC_KEY,
+      amount:String(Number(cfg.amount)),
+      currency:'CDF',
+      order_id:cfg.orderId
+    });
+
+    iframe.src='https://ikeepay.com/checkout/v1/inline?'+params.toString();
+  }
+
+  async function registerAutomaticDepositPendingConfirmation(){
+    const p=window.__pendingAutomaticDeposit;
+    if(!p)return;
+
+    try{
+      const existing=state.deposits.some(d=>String(d.ref||'')===p.orderId);
+      if(!existing){
+        await setDoc(doc(db,'deposits',idFor('d')),{
+          userId:p.userId,
+          product:p.product,
+          amount:p.amount,
+          paymentMethod:p.paymentMethod,
+          paymentNumber:'',
+          senderPhone:'',
+          ref:p.orderId,
+          orderId:p.orderId,
+          currency:p.currency,
+          date:new Date().toLocaleString('fr-FR'),
+          createdAt:now(),
+          status:'En attente de confirmation du paiement',
+          activatedAt:null,
+          firstDueAt:null
+        });
+        await addUserNotification(
+          'Paiement reçu',
+          'Votre paiement de '+Number(p.amount).toLocaleString('fr-FR')+' FC est en cours de confirmation automatique.',
+          'deposit'
+        );
+      }
+
+      const successText=document.querySelector('#success p');
+      if(successText)successText.textContent='Paiement reçu. Confirmation automatique en cours…';
+
+      showTfToast(
+        'Paiement reçu. Le dépôt sera activé après confirmation du prestataire.',
+        'success',
+        'Paiement automatique'
+      );
+
+      setTimeout(()=>{
+        closeAutomaticDepositPayment();
+        openHistory();
+      },1800);
+    }catch(e){
+      console.error(e);
+      toast('Le paiement a été reçu, mais son enregistrement a échoué.');
+      closeAutomaticDepositPayment();
+    }finally{
+      window.depositSubmitting=false;
+      const btn=document.getElementById('depositSubmitBtn');
+      if(btn){btn.disabled=false;btn.textContent='Payer maintenant';}
+      window.__pendingAutomaticDeposit=null;
+    }
+  }
+
+  function closeAutomaticDepositPayment(){
+    const overlay=document.getElementById('paymentOverlay');
+    const iframe=document.getElementById('ikeepay-iframe');
+    if(iframe)iframe.src='about:blank';
+    if(iframe)iframe.style.display='none';
+    if(overlay)overlay.style.display='none';
+    window.depositSubmitting=false;
+    const btn=document.getElementById('depositSubmitBtn');
+    if(btn){btn.disabled=false;btn.textContent='Payer maintenant';}
+  }
+
+  window.addEventListener('message',async function(event){
+    if(event.data==='ikeepay-ready'){
+      const l=document.getElementById('loading');
+      const f=document.getElementById('ikeepay-iframe');
+      if(l)l.style.display='none';
+      if(f)f.style.display='block';
+    }
+    if(event.data==='ikeepay-success'){
+      const l=document.getElementById('loading');
+      const f=document.getElementById('ikeepay-iframe');
+      const s=document.getElementById('success');
+      if(l)l.style.display='none';
+      if(f)f.style.display='none';
+      if(s)s.style.display='flex';
+      await registerAutomaticDepositPendingConfirmation();
+    }
+    if(event.data==='ikeepay-close'){
+      closeAutomaticDepositPayment();
+    }
+  });
+
+  document.addEventListener('click',function(e){
+    if(e.target && e.target.id==='closePayment')closeAutomaticDepositPayment();
+  });
 
   function getApprovedDepositsForUser(userId){ return state.deposits.filter(d=>d.userId===userId&&approved(d.status)); }
   window.getApprovedDepositsForUser=getApprovedDepositsForUser;
@@ -2060,31 +2391,110 @@ function submitSupportTicket(){
   async function updateWithdrawalPage(){
     const user=getCurrentUser();if(!user)return;
     const available=await getAvailableWithdrawalBalance(user);const balance=document.getElementById('withdrawBalance');if(balance)balance.textContent=available.toLocaleString('fr-FR')+' FC';
-    const list=document.getElementById('withdrawRequestList');if(!list)return;const requests=state.withdrawals.slice(0,8);
+    const list=document.getElementById('withdrawRequestList');if(!list)return;const count=document.getElementById('withdrawRecentCount');const requests=state.withdrawals.slice(0,8);
     if(!requests.length){list.innerHTML='<div class="support-empty">Aucune demande de retrait pour le moment.</div>';return;}
     list.innerHTML=requests.map(w=>{const date=w.date||new Date(w.createdAt||Date.now()).toLocaleString('fr-FR');const amount=(Number(w.amount)||0).toLocaleString('fr-FR')+' FC';const response=w.adminNote?'<div class="ticket-response"><b>Réponse :</b> '+escapeHtml(w.adminNote)+'</div>':'';return '<div class="request-item"><div class="request-top"><strong>'+amount+'</strong><span class="request-status '+withdrawalStatusClass(w.status)+'">'+withdrawalStatusText(w.status)+'</span></div><div class="request-meta">'+escapeHtml(w.paymentMethod||'')+' • '+escapeHtml(w.phone||'')+' • '+escapeHtml(date)+'</div>'+response+'</div>';}).join('');
   }
   window.updateWithdrawalPage=updateWithdrawalPage;
 
   async function submitWithdrawal(){
+    // Verrouillage immédiat : un deuxième clic est ignoré, même pendant
+    // les vérifications asynchrones Firebase.
     if(withdrawSubmitting)return;
-    const user=getCurrentUser();if(!user){setWithdrawNotice('Veuillez vous connecter.',false);return;}
-    const amount=Number(document.getElementById('withdrawAmount').value),phone=document.getElementById('withdrawPhone').value.trim(),name=document.getElementById('withdrawName').value.trim(),note=document.getElementById('withdrawNote').value.trim();
+    withdrawSubmitting=true;
+
+    const btn=document.getElementById('withdrawSubmitBtn');
+    const resetButton=()=>{
+      withdrawSubmitting=false;
+      if(btn){
+        btn.disabled=false;
+        btn.removeAttribute('aria-disabled');
+        btn.removeAttribute('data-submitting');
+        btn.style.pointerEvents='';
+        btn.innerHTML='<i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Demander le retrait';
+      }
+    };
+    if(btn){
+      btn.disabled=true;
+      btn.setAttribute('aria-disabled','true');
+      btn.setAttribute('data-submitting','true');
+      btn.style.pointerEvents='none';
+      btn.innerHTML='<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Traitement en cours…';
+    }
+
+    const user=getCurrentUser();
+    if(!user){setWithdrawNotice('Veuillez vous connecter.',false);resetButton();return;}
+
+    const amount=Number(document.getElementById('withdrawAmount').value);
+    const phone=document.getElementById('withdrawPhone').value.trim();
+    const name=document.getElementById('withdrawName').value.trim();
+    const note=document.getElementById('withdrawNote').value.trim();
+
+    // Minimum absolu : 3 000 FC.
+    if(!Number.isFinite(amount)||amount<3000){
+      setWithdrawNotice('Le montant minimum de retrait est de 3 000 FC.',false);
+      resetButton();return;
+    }
+
     const available=await getAvailableWithdrawalBalance(user);
-    if(!amount||amount<=0){setWithdrawNotice('Veuillez saisir un montant valide.',false);return;}
-    if(amount>available){setWithdrawNotice('Le montant demandé dépasse votre solde disponible.',false);return;}
-    if(!phone){setWithdrawNotice('Veuillez renseigner le numéro de réception.',false);return;}
-    if(!name){setWithdrawNotice('Veuillez renseigner le nom du bénéficiaire.',false);return;}
-    const duplicate=state.withdrawals.some(w=>Number(w.amount)===amount&&w.phone===phone&&!rejected(w.status));
-    if(duplicate){setWithdrawNotice('Une demande similaire est déjà en attente de traitement.',false);return;}
-    withdrawSubmitting=true;const btn=document.getElementById('withdrawSubmitBtn');btn.disabled=true;btn.textContent='Envoi en cours…';
+    if(amount>available){
+      setWithdrawNotice('Le montant demandé dépasse votre solde disponible.',false);
+      resetButton();return;
+    }
+    if(!phone){setWithdrawNotice('Veuillez renseigner le numéro de réception.',false);resetButton();return;}
+    if(!name){setWithdrawNotice('Veuillez renseigner le nom du bénéficiaire.',false);resetButton();return;}
+
+    // Protection supplémentaire contre une demande identique déjà en attente.
+    const duplicate=state.withdrawals.some(w=>
+      w.userId===user.id &&
+      Number(w.amount)===amount &&
+      String(w.phone||'').trim()===phone &&
+      !rejected(w.status)
+    );
+    if(duplicate){
+      setWithdrawNotice('Une demande similaire est déjà en attente de traitement.',false);
+      resetButton();return;
+    }
+
+    const withdrawalId=idFor('w');
+    const withdrawal={
+      userId:user.id,amount,paymentMethod:selectedWithdrawMethod,phone,name,note,
+      date:new Date().toLocaleString('fr-FR'),createdAt:now(),status:'En attente',adminNote:''
+    };
+
     try{
-      await setDoc(doc(db,'withdrawals',idFor('w')),{userId:user.id,amount,paymentMethod:selectedWithdrawMethod,phone,name,note,date:new Date().toLocaleString('fr-FR'),createdAt:now(),status:'En attente',adminNote:''});
-      await addUserNotification('Retrait envoyé','Votre demande de retrait de '+amount.toLocaleString('fr-FR')+' FC est en attente de traitement.','withdrawal');
-      showTfToast('Votre demande de retrait a bien été envoyée.','success','Retrait enregistré');
-      document.getElementById('withdrawAmount').value='';setWithdrawNotice('Votre demande a été envoyée. Elle sera vérifiée par l’administration.',true);
-    }catch(e){console.error(e);setWithdrawNotice('Erreur lors de l’envoi de la demande.',false);}
-    finally{withdrawSubmitting=false;btn.disabled=false;btn.textContent='Demander le retrait';}
+      await setDoc(doc(db,'withdrawals',withdrawalId),withdrawal);
+
+      state.withdrawals=[
+        {id:withdrawalId,...withdrawal},
+        ...state.withdrawals.filter(w=>w.id!==withdrawalId)
+      ];
+
+      document.getElementById('withdrawAmount').value='';
+      setWithdrawNotice('Demande envoyée. Ouverture de votre historique…',true);
+      await addUserNotification(
+        'Retrait envoyé',
+        'Votre demande de retrait de '+amount.toLocaleString('fr-FR')+' FC est en attente de traitement.',
+        'withdrawal'
+      );
+      showTfToast('Votre demande de retrait a bien été enregistrée.','success','Retrait enregistré');
+
+      await updateHistory();
+      document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+      document.getElementById('historyPage').classList.add('active');
+
+      const withdrawalTab=document.querySelector('#historyPage .tabs .tab:nth-child(2)');
+      if(withdrawalTab)historyTab('withdrawals',withdrawalTab);
+
+      window.scrollTo(0,0);
+
+      // Le verrou reste actif après succès : revenir à la page retrait
+      // réinitialisera le bouton via openWithdraw().
+    }catch(e){
+      console.error('Erreur retrait:',e);
+      setWithdrawNotice('Erreur lors de l’enregistrement du retrait. Veuillez réessayer.',false);
+      resetButton();
+    }
   }
   window.submitWithdrawal=submitWithdrawal;
 
@@ -2156,5 +2566,26 @@ function submitSupportTicket(){
   console.log('TERRAFORM : Firebase Auth + Firestore actifs pour le projet',firebaseConfig.projectId);
 </script>
 
+
+<div id="paymentOverlay">
+  <div class="paybar">
+    <span>Paiement sécurisé</span>
+    <button class="close" id="closePayment">×</button>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <b>Préparation du paiement…</b>
+    <span>Veuillez patienter.</span>
+  </div>
+
+  <iframe id="ikeepay-iframe" title="Paiement sécurisé iKeePay"></iframe>
+
+  <div id="success" class="success">
+    <div class="successIcon">✅</div>
+    <h2>Paiement validé</h2>
+    <p>Votre paiement a été confirmé.</p>
+  </div>
+</div>
 </body>
 </html>
